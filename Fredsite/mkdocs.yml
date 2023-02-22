@@ -1,0 +1,6 @@
+site_name: MKlorum
+site_url: https://example.com
+nav:
+ - Home: index.md
+ - about: about.md
+ - Notes: notes.md
