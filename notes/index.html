@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://example.com/notes/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Notes - MKlorum</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">MKlorum</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../about/" class="nav-link">about</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Notes</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../about/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#thinking-like-a-computer-scientist" class="nav-link">Thinking like a computer scientist</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#a-computational-thinking" class="nav-link">A computational thinking</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#b-standard-methods-and-techniques-used-to-develop-algorithms" class="nav-link">B Standard methods and techniques used to develop algorithms</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#selection-sort" class="nav-link">Selection sort</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#c-programming-paradigms" class="nav-link">C Programming paradigms</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#identifier" class="nav-link">Identifier</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-is-a-pure-function" class="nav-link">What is a pure function?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#python-map" class="nav-link">Python MAP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lambda-functions" class="nav-link">Lambda functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="thinking-like-a-computer-scientist">Thinking like a computer scientist</h1>
+<p>https://ebookcentral.proquest.com/lib/colwestanglia-ebooks/reader.action?docID=5645560</p>
+<h2 id="a-computational-thinking">A computational thinking</h2>
+<ul>
+<li>decomposition/ breaking problem down into smaller pieces</li>
+<li>Abstraction/ removing all non essential features from a problem</li>
+<li>Pattern Recognition/ is this similar to another problem</li>
+<li>Algorithm design/ can we reduce this to step by step instructions</li>
+</ul>
+<h2 id="b-standard-methods-and-techniques-used-to-develop-algorithms">B Standard methods and techniques used to develop algorithms</h2>
+<h2 id="selection-sort">Selection sort</h2>
+<p>abstraction- finding the minimum or maximum element in an unsorted array and then putting it in its correct position in a sorted array.
+doesn't have to be numbers.</p>
+<p>decomposition- The minimum element in the array i.e. 2 is searched for and then swapped with the element that is currently located at the first position, 7 Now the minimum element in the remaining unsorted array is searched for and put in the second position, and so on. breaking it down in to smaller problem</p>
+<p>pattern recognition- the problem is the same as the bubble sort the solution is different</p>
+<h2 id="c-programming-paradigms">C Programming paradigms</h2>
+<p>paradigm- patterns that we use for programming</p>
+<ul>
+<li>
+<p>Object - oriented
+Data driven- about encapsulating objects - data and methods to change it.
+C#, Python, JS</p>
+</li>
+<li>
+<p>Functional
+Create everything as pure functionary.
+Python, JS, C#, F#, Scala</p>
+</li>
+<li>
+<p>Procedural
+List of instructions, how to - begin to - stop here.
+Any language</p>
+</li>
+<li>
+<p>Event - driven
+Event handlers responding to events.
+C#, JS</p>
+</li>
+</ul>
+<p>Programs can use more then one.</p>
+<h2 id="identifier">Identifier</h2>
+<p>anything we need to assign a name. represents the address in ram not the value.</p>
+<p>apple 
+apple 5
+5 apple no! not allowed to start with integers.
+apple. no!
+apple; no!
+apple_sauce
+Apple
+aPPle</p>
+<h3 id="boolean-operators">Boolean operators</h3>
+<h3 id="modulus-operators">Modulus operators</h3>
+<p>% - gives the integer remainder</p>
+<h2 id="what-is-a-pure-function">What is a pure function?</h2>
+<ul>
+<li>Its a function, accepts inputs returns a single value.</li>
+<li>Its repeatable, given the same arguments it always produces the same results.</li>
+<li>No side affects, doesn't change anything outside of the function.</li>
+</ul>
+<h2 id="python-map">Python MAP</h2>
+<p>MAP is a built in function so you don't need to import it.</p>
+<p>iterable- anything wih the concept of next and previous.</p>
+<p>go's through the items one by one for memory efficiency.</p>
+<h2 id="lambda-functions">Lambda functions</h2>
+<p>Used to define functions on the fly.</p>
+<p>parameters are needed when more then one parameters are called or no parameters are called.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
